@@ -1,6 +1,7 @@
 import AreaChart from "./AreaChart"
 import ArrowDown from '../../../public/assets/images/ArrowDown.svg'
 import Back from '../../../public/assets/images/Back.svg'
+import Graph from '../../../public/assets/images/Graph.svg'
 import Image from "next/image"
 import { useState } from "react"
 import { TableCell } from "../chain-monitoring/Right"
@@ -136,6 +137,9 @@ const TradingVolume = () => {
                 <h4 className="text-lg font-semibold">Trading Volume <span className="font-light">[24h]</span></h4>
                 <h3 className="text-2xl font-bold">$52,142,886</h3>
             </div>
+            <div className="w-[248px] relative h-[52px] bg-[#535353] rounded-[10px]">
+                <Image className="absolute bottom-0 right-0 left-0" src={Graph} />
+            </div>
             </div>
         </div>
     )
@@ -174,7 +178,7 @@ const PriceRight = () => {
     className='w-[518px] flex flex-col gap-4 justify-between'>
     <AllTimePriceHistory />
     <TradingVolume />
-    {isOpen 
+    {!isOpen 
     ? <EntitiesWrapper>
         <Entity handleIsOpen={handleIsOpen} />
         <Entity handleIsOpen={handleIsOpen} />

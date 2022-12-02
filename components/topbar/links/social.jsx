@@ -5,6 +5,7 @@ import Github from '../../../public/assets/images/Github.svg'
 import Twitter from '../../../public/assets/images/Twitter.svg'
 import SocialIcon from '../../../public/assets/images/SocialIcon.svg'
 import Image from "next/image"
+import Link from "next/link"
 
 const SocialWrapper = styled.div`
     display: flex;
@@ -32,11 +33,21 @@ const Social = () => {
     <SocialWrapper>
         <h4>Community Resources</h4>
         <SocialIcons>
-            <Image src={Github} alt='Github' width={20} height={20} />
-            <Image src={Telegram} alt='Telegram' width={20} height={20}  />
-            <Image src={SocialIcon} alt='SocialIcon' width={20} height={20}  />
-            <Image src={Discord} alt='Discord' width={20} height={20}  />
-            <Image src={Twitter} alt='Twitter' width={20} height={20} />
+            <Link href='/'>
+                <Image src={Github} alt='Github' width={20} height={20} />
+            </Link>
+            <Link href='/'>
+                <Image src={Telegram} alt='Telegram' width={20} height={20}  />
+            </Link>
+            <Link href='/'>
+                <Image src={SocialIcon} alt='SocialIcon' width={20} height={20}  />
+            </Link>
+            <Link href='/'>
+                <Image src={Discord} alt='Discord' width={20} height={20}  />
+            </Link>
+            <Link href='/'>
+                <Image src={Twitter} alt='Twitter' width={20} height={20} />
+            </Link>
         </SocialIcons>
     </SocialWrapper>
   )

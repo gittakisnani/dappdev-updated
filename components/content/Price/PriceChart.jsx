@@ -30,13 +30,15 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
-  scales: {
-    x: {
-        grid: {
-          offset: true
-        }
+  plugins: {
+    legend: {
+      display: false
+    },
+    grid: {
+      display: true
     }
-}
+  },
+
 };
 
 const labels = ['Nov', '2', '7', '10', '14', '17', '20', '24', '27', ' '];
@@ -46,12 +48,12 @@ export const data = {
   datasets: [
     {
       label: 'Dataset 1',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 110000 })),
       backgroundColor: '#006B11',
     },
     {
       label: 'Dataset 2',
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 299992 })),
       backgroundColor: '#FF1616',
     },
   ],

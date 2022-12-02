@@ -2,7 +2,7 @@ import Image from "next/image"
 import Info from '../../../public/assets/images/Info.svg'
 import ThumbsUp from '../../../public/assets/images/ThumbsUp.svg'
 import Copy from '../../../public/assets/images/Copy.svg'
-import TreeDotes from '../../../public/assets/images/TreeDots.png'
+import TreeDotes from '../../../public/assets/images/TreeDots.svg'
 import LinksWrapper from "../../LinksWrapper"
 const HighlightsData = [
     'Project is Relatively Decentralized',
@@ -33,7 +33,7 @@ const Introduction = () => {
             ))}
             </div>
         </div>
-        <div className="bg-[#2D2D2D] p-6 rounded-[10px] border border-gray-100 text-textColorActive">
+        <div className="bg-[#2D2D2D] flex-1 h-full p-6 rounded-[10px] border border-gray-100 text-textColorActive">
             <h4 className="text-[22px] leading-[119%] font-bold capitalize mb-2">Additional Info</h4>
             <div className="flex flex-col gap-2 leading-[150%]">
                 <div className="flex justify-between items-center text-textColor ">

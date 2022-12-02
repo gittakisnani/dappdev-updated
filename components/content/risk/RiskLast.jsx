@@ -8,8 +8,10 @@ import Burnable from '../../../public/assets/images/Burnable.svg'
 const RiskLastEntity = ({ icon, primaryText, secondaryText }) => {
     return (
         <div className="rounded-[10px] border border-textColor p-4 flex justify-between gap-4 items-center px-8">
+            <div className="w-[100px]">
             <Image src={icon} alt={primaryText}  />
-            <div className="flex flex-col">
+            </div>
+            <div className="flex flex-col flex-1">
                 <div className="flex items-center gap-2">
                     <h4 className="text-textColorActive text-[25px]">{primaryText}</h4>
                     <Image src={Info} alt='More' width={16} />

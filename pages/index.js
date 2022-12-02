@@ -7,6 +7,9 @@ import Overview from '../components/content/overview/Overview'
 import TokenDetails from '../components/content/overview/TokenDetails'
 import PriceChart from '../components/content/Price/PriceChart'
 import PriceRight from '../components/content/Price/PriceRight'
+import LeftReport from '../components/content/report/LeftReport'
+import ReportChart from '../components/content/report/ReportChart'
+import RightReport from '../components/content/report/RightReport'
 import Priviledges from '../components/content/risk/Priviledges'
 import RiskLast from '../components/content/risk/RiskLast'
 import RiskMedium from '../components/content/risk/RiskMedium'
@@ -30,6 +33,9 @@ export default function Home() {
       <RightSocialMedia /> */}
       {/* <PriceChart />
       <PriceRight /> */}
+      {/* <LeftReport />
+      <ReportChart />
+      <RightReport /> */}
     </>
   )
 }

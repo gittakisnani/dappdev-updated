@@ -1,7 +1,7 @@
 import Image from "next/image"
 import styled from "styled-components"
 import Info from '../../../public/assets/images/Info.svg'
-import ScoreImage from '../../../public/assets/images/Score.png'
+import ScoreImage from '../../../public/assets/images/Score.svg'
 
 
 const Score = styled.div`

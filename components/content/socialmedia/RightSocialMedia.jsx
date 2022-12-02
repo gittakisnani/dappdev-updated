@@ -42,7 +42,7 @@ const RightSocialMedia = () => {
   return (
     <div 
     style={{ fontFamily: 'Poppins'}}
-    className="rounded-[10px] bg-[#A4A4A4] p-4 max-w-[622px] flex flex-col gap-4 overflow-y-auto">
+    className="rounded-[10px] bg-[#A4A4A4] flex-1 p-4 max-w-[622px] flex flex-col gap-4 overflow-y-auto">
         <TweetList tweet='@PancakeSwap' />
         <TweetList followers tweet='Influencers' />
         <TweetList tweet='The Community' />

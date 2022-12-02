@@ -11,7 +11,7 @@ import {
   Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
-import { faker } from '@faker-js/faker';
+import {faker} from '@faker-js/faker';
 
 ChartJS.register(
   CategoryScale,
@@ -26,12 +26,49 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  plugins: {
+    legend: {
+      position: 'top',
+      display: false
+    },
+    title: {
+      display: false,
+      text: 'Chart.js Line Chart',
+    },
+  },
+  // Modify the axis by adding scales
+  scales: {
+    // to remove the labels
+    x: {
+      ticks: {
+        display: false,
+      },
+
+      // to remove the x-axis grid
+      grid: {
+        drawBorder: false,
+        display: false,
+      },
+    },
+    // to remove the y-axis labels
+    y: {
+      ticks: {
+        display: false,
+        beginAtZero: true,
+      },
+      // to remove the y-axis grid
+      grid: {
+        drawBorder: false,
+        display: false,
+      },
+    },
+  },
 };
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
 
 export const data = {
-    labels,
+  labels,
   datasets: [
     {
       fill: true,
@@ -44,5 +81,5 @@ export const data = {
 };
 
 export default function AreaChart() {
-  return <Line className='max-w-[200px] h-[80px]' options={options} data={data} />;
+  return <Line width={248} className={'!w-[248px]'} options={options} data={data} />;
 }

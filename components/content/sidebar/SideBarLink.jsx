@@ -20,13 +20,15 @@ const SideBarLink = styled.div`
 
 const SideBarLinkWrapper = ({ text, icon, link, width, height, active }) => {
   return (
-    <SideBarLink active={active}>
+    <SideBarLink className='relative' active={active}>
         <Image src={icon} alt={text} width={width} height={height}  />
         <p>
             <Link href={link}>
                 {text}
             </Link>
         </p>
+
+        {active && <span className='absolute -right-6 h-[60px] rounded-tl-[10px] rounded-bl-[10px] w-[20px] bg-textColorActive'></span>}
     </SideBarLink>
   )
 }

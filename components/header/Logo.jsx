@@ -1,7 +1,7 @@
 import Link from "next/link"
 import styled from "styled-components"
 import Image from "next/image"
-import Group from '../../public/assets/images/group.png'
+import Group from '../../public/assets/images/Group.svg'
 
 
 const LogoText = styled.h2`
