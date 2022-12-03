@@ -1,7 +1,7 @@
 import Title from "../../Title"
 import Discord from '../../../public/assets/images/DiscordWhite.svg'
 import Telegram from '../../../public/assets/images/TelegramWhite.svg'
-import Github from '../../../public/assets/images/GithubWhite.svg'
+import Github from '../../../public/assets/images/GitHubWhite.svg'
 import SocialIcon from '../../../public/assets/images/SocialIconWhite.svg'
 import Twitter from '../../../public/assets/images/TwitterWhite.svg'
 import Mention from '../../../public/assets/images/Mention.svg'
@@ -12,7 +12,7 @@ import Positive from '../../../public/assets/images/Positive.svg'
 import Negative from '../../../public/assets/images/Negative.svg'
 import Stable from '../../../public/assets/images/Stable.svg'
 import SocialMediaData from '../../../data/SocialMediaData.json'
-import TwitterData from '../../../data/TwitterData.json'
+import TwitterData from '../../../data/twitterData.json'
 import Image from "next/image"
 import Link from "next/link"
 
