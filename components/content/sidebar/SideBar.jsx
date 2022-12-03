@@ -64,6 +64,7 @@ const SideBar = styled.aside`
     flex-direction: column;
     gap: 1.6rem;
     overflow-y: auto;
+    min-width: 248px;
     height: 100%;
     &::-webkit-scrollbar {
         display: none;

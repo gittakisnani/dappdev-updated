@@ -6,6 +6,7 @@ import User from "./User"
 const Container = styled.div`
     display: flex;
     width: 100%;
+    min-width: 1500px;
     max-width: 1700px;
     border-radius: 20px;
     background: ${({ theme }) => theme.primaryGradient};
