@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import SideBarWrapper from "./sideBar/SideBar";
+import SideBarWrapper from "./sidebar/SideBar";
 
 const ContentWrapper = styled.main`
     flex: 1;

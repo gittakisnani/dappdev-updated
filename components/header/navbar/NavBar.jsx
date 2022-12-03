@@ -1,6 +1,5 @@
-import Link from "next/link";
 import styled from "styled-components";
-import NavLink from "./navLink";
+import NavLink from "./NavLink";
 
 const navLinksData = [
     {
