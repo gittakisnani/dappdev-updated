@@ -85,7 +85,7 @@ const Table = () => {
 
 const ReportChart = () => {
   return (
-    <div className="p-4 rounded-[10px] bg-[#111111] h-full text-textColorActive w-[478px] flex flex-col overflow-y-hidden">
+    <div className="p-4 rounded-[10px] bg-[#111111] h-full text-textColorActive md:w-[478px] flex flex-col overflow-y-hidden">
         <Title text='Findings Summary' includeIcon={false} />
         <div className="grid grid-cols-2 gap-2 mt-2">
             <p className="text-sm font-light">

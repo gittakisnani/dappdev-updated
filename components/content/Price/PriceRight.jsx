@@ -110,8 +110,7 @@ const Table = () => {
 const AllTimePriceHistory = () => {
     return (
         <div className="p-4 rounded-[10px] border border-textColor">
-            <div className="flex justify-between items-center">
-                {/* <Title text='All Time Price History' includeIcon={false} /> */}
+            <div className="flex flex-col md:justify-between gap-2 md:flex-row md:items-center">
                 <h4 className="text-lg font-semibold text-textColorActive">All Time Price History</h4>
                 <div className="w-[248px] h-0.5 bg-textColor"></div>
             </div>
@@ -132,13 +131,13 @@ const AllTimePriceHistory = () => {
 const TradingVolume = () => {
     return (
         <div className="p-4 rounded-[10px] border border-textColor text-textColorActive">
-            <div className="flex items-center justify-between gap-4">
-            <div>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="text-center">
                 <h4 className="text-lg font-semibold">Trading Volume <span className="font-light">[24h]</span></h4>
                 <h3 className="text-2xl font-bold">$52,142,886</h3>
             </div>
             <div className="w-[248px] relative h-[52px] bg-[#535353] rounded-[10px]">
-                <Image className="absolute bottom-0 right-0 left-0" src={Graph} />
+                <Image className="absolute bottom-0 right-0 left-0" alt="Trading Volume" src={Graph} />
             </div>
             </div>
         </div>

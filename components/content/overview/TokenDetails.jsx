@@ -3,6 +3,9 @@ import Binance from '../../../public/assets/images/Binance.svg'
 import Info from '../../../public/assets/images/Info.svg'
 import Copy from '../../../public/assets/images/Copy.svg'
 import LinksWrapper from '../../LinksWrapper'
+import AlertWrapper from './AlertWrapper'
+import CategoriesWrapper from './CategoriesWrapper'
+import useWindowSize from '../../../hooks/useWindowSize'
 
 
 const DetailsData = [
@@ -37,7 +40,9 @@ export const DetailEntity = ({ detail }) => {
 }
 
 const TokenDetails = () => {
+    const { width } = useWindowSize()
   return (
+    <>
     <div className='p-4 rounded-[10px] border border-textColorActive text-textColorActive bg-[#111111] flex-1'>
         <div className='flex gap-2 items-center mb-4'>
         <h4 className='font-bold text-xl text-textColorActive'>Token Details</h4>
@@ -47,6 +52,11 @@ const TokenDetails = () => {
             {DetailsData.map(detail => (<DetailEntity key={Math.random()} detail={detail} />))}
         </div>
     </div>
+    {width < 768 && <div className='text-textColorActive flex flex-col gap-6'>
+          <CategoriesWrapper />
+          <AlertWrapper />
+    </div>}
+    </>
   )
 }
 

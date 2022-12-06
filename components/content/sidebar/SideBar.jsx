@@ -55,19 +55,32 @@ const SideBarLinksData = [
 ]
 
 const SideBar = styled.aside`
-    width: 248px;
     background: ${({ theme }) => theme.primaryGradient};
     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     padding: 1.6rem 1.2rem;
     display: flex;
-    flex-direction: column;
     gap: 1.6rem;
+    position: fixed;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    bottom: 0;
     overflow-y: auto;
-    min-width: 248px;
-    height: 100%;
+    
     &::-webkit-scrollbar {
         display: none;
+    }
+
+    @media (min-width: 768px) {
+        & {
+            position: static;
+            width: 248px;
+            flex-direction: column;
+            min-width: 248px;
+            height: 100%;
+            justify-content: unset;
+        }
     }
 `
 
@@ -96,7 +109,7 @@ const SideBarWrapper = () => {
                 height={height} 
                 />
 
-                {index < SideBarLinksData.length - 1  && <Separator />}
+                {index < SideBarLinksData.length - 1  && <Separator className="hidden md:block" />}
             </>
         ))}
     </SideBar>

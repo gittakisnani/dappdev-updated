@@ -1,5 +1,6 @@
 import Image from "next/image"
 import styled from "styled-components"
+import useWindowSize from "../../../hooks/useWindowSize"
 import Info from '../../../public/assets/images/Info.svg'
 import ScoreImage from '../../../public/assets/images/Score.svg'
 
@@ -25,14 +26,19 @@ const AuditScoreTextWrapper = styled.div`
     > div {
         display: flex;
         flex-direction: column;
-        gap: .2rem;
+        gap: .1rem;
     }
 
 
     > div h4 {
         font-weight: 600;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 90%;
+
+
+        @media screen and (min-width: 768px) {
+            font-size: 35px;
+        }
     }
 
     > div p {
@@ -52,13 +58,19 @@ const ScoreValueWrapper = styled.div`
     > h5 {
         position: absolute;
         font-weight: 600;
-        font-size: 35px;
+        font-size: 20px;
         line-height: 90%;
+
+
+        @media (min-width: 768px) {
+            font-size: 35px;
+        }
     }
 
 `
 
 const ScoreWrapper = () => {
+    const { width } = useWindowSize()
   return (
     <Score>
         <AuditScoreTextWrapper>
@@ -70,7 +82,7 @@ const ScoreWrapper = () => {
         </AuditScoreTextWrapper>
         <ScoreValueWrapper>
             <h5>84</h5>
-            <Image src={ScoreImage} alt={'Score Chart'} />
+            <Image src={ScoreImage} alt={'Score Chart'} width={width < 768 ? 55 : undefined} />
         </ScoreValueWrapper>
     </Score>
   )

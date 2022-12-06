@@ -47,7 +47,7 @@ const PriviledgesData = [
 
 const Priviledges = () => {
   return (
-    <div className='p-4 rounded-[10px] bg-[#111111] text-textColorActive w-[420px]'>
+    <div className='p-4 rounded-[10px] bg-[#111111] text-textColorActive md:w-[420px]'>
       <div className='flex gap-2 items-center'>
         <h4 className='text-[22px] font-bold leading-[119.5%]'>Ownership Priviledges</h4>
         <Image src={Info} alt={'More Infos'} width={20} />

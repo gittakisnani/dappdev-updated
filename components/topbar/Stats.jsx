@@ -12,8 +12,10 @@ const State = styled.div`
     gap: .2rem;
     padding: 0 2rem;
 
-    &:not(:last-child) {
-        border-right: 2px solid #535353;
+    @media (min-width: 768px) {
+        &:not(:last-child) {
+            border-right: 2px solid #535353;
+        }
     }
 
     > p {
@@ -56,11 +58,11 @@ const Stats = () => {
             <p>Current Price (CAKE)</p>
             <h4>$4.38</h4>
         </State>
-        <State>
+        <State className="!hidden md:!flex">
             <p>24 Hour Change</p>
             <h4>$4.38</h4>
         </State>
-        <State>
+        <State className="!hidden md:!flex">
             <p>Market Cap</p>
             <h5>$638,463,664</h5>
         </State>

@@ -3,14 +3,17 @@ import Logo from "./Logo"
 import NavBar from "./navbar/NavBar"
 
 const Container = styled.div`
-    width: 100%;
     height: 100%;
-    max-width: 1700px;
     display: flex;
     gap: 2rem;
-    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      max-width: 1700px;
+      justify-content: space-around;
+    }
 `
 
 const Header = () => {

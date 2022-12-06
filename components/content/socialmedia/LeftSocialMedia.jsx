@@ -84,7 +84,7 @@ const TwitterOverviewEntity = ({ category, total, value, icon}) => {
 
 const Right = () => {
     return (
-        <div className="border-special rounded-[10px] p-4 flex-1 text-textColorActive h-full w-[327px] flex flex-col">
+        <div className="border-special rounded-[10px] p-4 flex-1 text-textColorActive h-full md:w-[327px] flex flex-col">
             <div className="flex items-center justify-between">
                 <Title includeIcon={false} text='Twitter Overview' />
                 <Image src={Twitter} alt='Twitter overview' />
@@ -104,8 +104,8 @@ const LeftSocialMedia = () => {
   return (
     <div 
     style={{ fontFamily: 'Poppins' }}
-    className="flex gap-4">
-        <div className="w-[327px] flex flex-col gap-4">
+    className="flex gap-4 flex-col md:flex-row">
+        <div className="md:w-[327px] flex flex-col gap-4">
             <Top />
             <Bottom />
         </div>

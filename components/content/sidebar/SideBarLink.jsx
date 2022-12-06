@@ -21,14 +21,16 @@ const SideBarLink = styled.div`
 const SideBarLinkWrapper = ({ text, icon, link, width, height, active }) => {
   return (
     <SideBarLink className='relative' active={active}>
-        <Image src={icon} alt={text} width={width} height={height}  />
-        <p>
+        <Link href={link}>
+            <Image src={icon} alt={text} width={active ? width + 5 : width} height={active ? height + 5 : height}  />
+        </Link>
+        <p className='hidden md:block'>
             <Link href={link}>
                 {text}
             </Link>
         </p>
 
-        {active && <span className='absolute -right-6 h-[60px] rounded-tl-[10px] rounded-bl-[10px] w-[20px] bg-textColorActive'></span>}
+        {active && <span className='absolute top-[-25px] right-[7px] h-[10px] rounded-br-[10px] md:-right-6 md:h-[60px] md:rounded-br-none md:rounded-tl-[10px] rounded-bl-[10px] w-[30px] md:w-[20px] bg-textColorActive'></span>}
     </SideBarLink>
   )
 }

@@ -31,7 +31,7 @@ const Entity = () => {
 
 const RiskMedium = () => {
   return (
-    <div className="flex flex-col gap-4 w-[420px]">
+    <div className="flex flex-col gap-4 md:w-[420px]">
         <div className='grid grid-cols-2 gap-4'>
             <Risk good />
             <Risk />

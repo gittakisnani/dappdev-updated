@@ -64,7 +64,7 @@ const Left = () => {
   return (
     <div 
     style={{ fontFamily: 'Poppins'}}
-    className="flex flex-col gap-2 justify-between w-[327px]">
+    className="flex flex-col gap-2 justify-between md:w-[327px]">
       <TokenAddress />
       <GasFree />
       <CustomAlert />

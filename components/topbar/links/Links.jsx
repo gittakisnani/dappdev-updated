@@ -11,6 +11,10 @@ const LinksWrapper = styled.div`
     display: flex;
     justify-content: space-around;
     align-content: center;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 

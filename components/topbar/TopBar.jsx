@@ -5,18 +5,22 @@ import User from "./User"
 
 const Container = styled.div`
     display: flex;
-    width: 100%;
-    min-width: 1500px;
-    max-width: 1700px;
     border-radius: 20px;
     background: ${({ theme }) => theme.primaryGradient};
     justify-content: space-between;
     gap: 2rem;
     align-items: center;
     margin: 0 auto;
-    height: 113px;
     padding: .8rem;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
+    
+
+    @media (min-width: 768px) {
+      height: 113px;
+      min-width: 1500px;
+      max-width: 1700px;
+    }
 `
 
 const TopBar = () => {

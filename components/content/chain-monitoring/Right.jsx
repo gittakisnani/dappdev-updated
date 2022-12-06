@@ -71,7 +71,7 @@ export const TableCell = ({ children }) => {
 
 const WalletAgeDistributionEntity = ({ icon, primaryText, secondaryText }) => {
     return (
-        <div className="flex gap-2">
+        <div className="flex gap-2 min-w-[300px]">
             <span className="p-3 rounded-[10px] bg-textColor flex justify-center items-center">
                 <Image src={icon} alt={secondaryText} width={24} />
             </span>
@@ -99,8 +99,8 @@ const WalletAgeDistributionStat = ({ text, value}) => {
 
 const WalletAgeDistribution = () => {
     return (
-        <div className="bg-black/70 p-4 rounded-[10px] flex justify-between gap-8 text-textColorActive">
-            <div className="flex flex-col">
+        <div className="bg-black/70 p-4 rounded-[10px] flex flex-col md:flex-row items-start md:items-center justify-between gap-8 text-textColorActive overflow-x-auto">
+            <div className="flex flex-col min-w-[400px] my-2 md:my-0">
                 <Title text='Wallet Age Distribution' />
                 <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-4">
                     <WalletAgeDistributionEntity icon={WalletAge1} secondaryText='Average Wallet Age' primaryText='1 yr 1 mos' />
@@ -109,7 +109,7 @@ const WalletAgeDistribution = () => {
                     <WalletAgeDistributionEntity icon={WalletAge1} secondaryText='Average Wallet Age' primaryText='1 yr 1 mos' />
                 </div>
             </div>
-            <div className="flex flex-1 flex-col gap-4">
+            <div className="flex flex-1 flex-col gap-4 min-w-[400px] my-2 md:my-0">
                 <WalletAgeDistributionStat text='Above 1 yr' value={67} />
                 <WalletAgeDistributionStat text='6 mo - 1 yr' value={24} />
                 <WalletAgeDistributionStat text='3 mo - 6 mo' value={5} />

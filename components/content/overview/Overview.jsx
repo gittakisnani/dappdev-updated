@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import useWindowSize from "../../../hooks/useWindowSize"
 import AlertWrapper from "./AlertWrapper"
 import CategoriesWrapper from "./CategoriesWrapper"
 import ImagesWrapper from "./ImagesWrapper"
@@ -18,12 +19,17 @@ const OverviewWrapper = styled.div`
 `
 
 const Overview = () => {
+  const { width } = useWindowSize()
   return (
     <OverviewWrapper>
-        <ImagesWrapper />
-        <ScoreWrapper />
-        <CategoriesWrapper />
-        <AlertWrapper />
+        <div className="flex flex-row md:flex-col w-full justify-between md:justify-[unset]">
+          <ImagesWrapper />
+          <ScoreWrapper />
+        </div>
+        {width >= 768 && <>
+          <CategoriesWrapper />
+          <AlertWrapper />
+        </>}
     </OverviewWrapper>
   )
 }

@@ -26,6 +26,10 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding-left: 4.5rem;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 `
 
 

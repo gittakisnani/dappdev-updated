@@ -63,16 +63,16 @@ export default function PriceChart() {
   return (
     <div 
     style={{ fontFamily: 'Poppins'}}
-    className='rounded-[10px] w-[60%] flex flex-col gap-4 p-4 bg-black/90 '>
-    <div className='flex gap-6 items-center'>
+    className='rounded-[10px] md:w-[60%] flex flex-col gap-4 p-4 bg-black/90 '>
+    <div className='flex flex-col md:flex-row gap-6 items-center'>
       <h4 className='text-textColorActive text-lg font-medium' >PancakeSwap</h4>
-      <div className='p-2 px-4 border rounded-[10px] border-textColor text-textColor flex-1 flex items-center justify-between max-w-[500px]'>
+      <div className='p-2 px-4 border rounded-[10px] border-textColor text-textColor flex-1 flex items-center justify-between md:max-w-[500px]'>
       <div className='flex items-center gap-4'>
         <Image src={Time} alt='Time' width={18} />
         <Image src={Line} alt='Line' width={18} />
         <Image src={Settings} alt='Settings' width={18} />
       </div>
-      <div className='flex flex-1 justify-center items-center gap-2'>
+      <div className='flex flex-1 justify-center items-center gap-2 px-4'>
         <span className='value text-sm font-semibold text-textColorActive'>3.9456</span>
         <span className='text-xs'>+0.204</span>
         <span className='text-xs'>+0.204</span>
