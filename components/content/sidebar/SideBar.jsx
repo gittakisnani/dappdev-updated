@@ -57,7 +57,6 @@ const SideBarLinksData = [
 const SideBar = styled.aside`
     background: ${({ theme }) => theme.primaryGradient};
     box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
     padding: 1.6rem 1.2rem;
     display: flex;
     gap: 1.6rem;
@@ -80,6 +79,7 @@ const SideBar = styled.aside`
             min-width: 248px;
             height: 100%;
             justify-content: unset;
+            border-radius: 20px;
         }
     }
 `

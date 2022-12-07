@@ -14,7 +14,8 @@ export const GlobalStyles=createGlobalStyle`
 
     body {
         font-family: 'Kanit', sans-serif;
-        height: 100vh;
+        min-height: 100vh;
+        width: 100vw;
         transition: all 0.25s linear;
     }
 `

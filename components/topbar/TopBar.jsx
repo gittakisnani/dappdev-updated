@@ -14,7 +14,7 @@ const Container = styled.div`
     padding: .8rem;
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    
+    overflow-x: hidden;
 
     @media (min-width: 768px) {
       height: 113px;

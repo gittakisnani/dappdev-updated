@@ -11,8 +11,8 @@ const ContentWrapper = styled.main`
     gap: 1rem;
     margin: 0 auto;
     overflow: auto;
-    width: 100%;
     @media (min-width: 768px) {
+        width: 100%;
         height: 505px;
         max-height: 580px;
         min-width: 1500px;

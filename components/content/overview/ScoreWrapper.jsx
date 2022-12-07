@@ -82,7 +82,7 @@ const ScoreWrapper = () => {
         </AuditScoreTextWrapper>
         <ScoreValueWrapper>
             <h5>84</h5>
-            <Image src={ScoreImage} alt={'Score Chart'} width={width < 768 ? 55 : undefined} />
+            <Image src={ScoreImage} alt={'Score Chart'} width={width < 768 ? 100 : undefined} />
         </ScoreValueWrapper>
     </Score>
   )

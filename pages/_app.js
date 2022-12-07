@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   gap: 2rem;
   min-height: 100vh;
   padding: .8rem 1.4rem;
+  width: 100vw;
 `
 
 function MyApp({ Component, pageProps }) {
@@ -20,7 +21,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <ThemeProvider theme={globalTheme}>
         <GlobalStyles />
-        <Wrapper>
+        <Wrapper className=''>
           <Header />
           <TopBar />
           <Content>
