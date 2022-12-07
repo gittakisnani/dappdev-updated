@@ -46,7 +46,7 @@ const Table = () => {
         <table 
         style={{ fontFamily: 'Poppins'}}
         className="w-full mt-3 text-textColor">
-                <thead className="text-textColor font-thin text-xs">
+                <thead className="text-textColor font-thin text-[10px] md:text-xs">
                     <tr>
                     <th></th>
                     <th>Severity</th>
@@ -87,7 +87,7 @@ const ReportChart = () => {
   return (
     <div className="p-4 rounded-[10px] bg-[#111111] h-full text-textColorActive md:w-[478px] flex flex-col overflow-y-hidden">
         <Title text='Findings Summary' includeIcon={false} />
-        <div className="grid grid-cols-2 gap-2 mt-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-2 mt-2 mb-6 md:mb-0">
             <p className="text-sm font-light">
             This is a summary of the issues found in the smart contract of <span className="font-semibold">PancakeSwap</span> during our intense Audit Process. To see a detailed analysis, view the full Audit PDF.
             </p>
@@ -98,7 +98,7 @@ const ReportChart = () => {
                 <p className="text-2xl font-bold">11</p>
                 <p>Issues found</p>
             </div>
-            <Chart />
+            <Chart  />
             </div>
         </div>
         <div className="flex flex-1 flex-col gap-1 overflow-auto">

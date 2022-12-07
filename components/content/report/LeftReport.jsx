@@ -4,6 +4,7 @@ import Binance from '../../../public/assets/images/Binance.svg'
 import Passed from '../../../public/assets/images/Passed.svg'
 import Copy from '../../../public/assets/images/Copy.svg'
 import LinksWrapper from "../../LinksWrapper"
+import useWindowSize from "../../../hooks/useWindowSize"
 
 const DetailsData = [
   { key: 'Project Name', value: 'PancakeSwap Token'},
@@ -18,7 +19,7 @@ const LeftReport = () => {
   return (
     <div className="flex flex-col gap-4 justify-between md:w-[478px]">
         <div className="p-4 rounded-[10px] border border-textColorActive text-textColorActive bg-[#111111] flex-1">
-            <Title text={'Audit Overview'} />
+            <Title  text={'Audit Overview'} />
             <div className="mt-4 flex flex-col gap-5">
             {DetailsData.map(detail => (<DetailEntity key={Math.random()} detail={detail} />))}
             </div>

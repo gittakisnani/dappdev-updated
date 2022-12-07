@@ -11,6 +11,10 @@ const LogoText = styled.h2`
     color: ${({ theme }) => theme.textColorActive};
     font-style: normal;
     z-index: 10;
+
+    @media (max-width: 768px) {
+    font-size: 20px;
+    }
 `
 
 
@@ -38,6 +42,10 @@ const GreenLive = styled.span`
     border-radius: 3px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     transform: matrix(1, 0, 0, -1, 0, 0);
+
+    @media (max-width: 768px) {
+        transform: translateX(-30px);
+    }
 `
 
 

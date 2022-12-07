@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
-
+import useWindowSize from '../../../hooks/useWindowSize'
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
@@ -36,5 +36,6 @@ const options = {
 }
 
 export default function Chart() {
-  return <Doughnut options={options} data={data} />;
+  const { width } = useWindowSize()
+  return <Doughnut options={{...options, ...(width < 768 && { cutout: 80})}} data={data} />;
 }

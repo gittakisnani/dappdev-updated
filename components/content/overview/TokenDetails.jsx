@@ -26,12 +26,12 @@ export const DetailEntity = ({ detail }) => {
             <div className='flex gap-2 items-center'>
                 <p 
                 style={detail.white && { color: 'white', fontWeight: 600 }}
-                className='text-lg font-light leading-[27px]'>{detail.key}</p>
+                className='text-sm md:text-lg font-light leading-[27px]'>{detail.key}</p>
                 <Image src={Info} alt={detail.key} width={17} />
             </div>
             {!detail?.link && <div className='flex items-center gap-2'>
                 {detail?.image && <Image src={detail.image.src} alt={detail.image.alt} />}
-                <p style={detail?.redBorder ? { border: '1px solid red', padding: '2px 5px'} : detail.red ? { color: '#FF1616'} : detail.green ?  { color: '#00DE24'}: null} className='font-medium text-[16px] leading-[24px]'>{detail.value}</p>
+                <p style={detail?.redBorder ? { border: '1px solid red', padding: '2px 5px'} : detail.red ? { color: '#FF1616'} : detail.green ?  { color: '#00DE24'}: null} className='font-medium text-xs md:text-[16px] leading-[24px]'>{detail.value}</p>
             </div>}
 
             {detail?.link && <LinksWrapper text={detail.key} images={[{ src: Copy , alt: 'Copy'}]} />}

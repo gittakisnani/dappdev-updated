@@ -17,6 +17,7 @@ import Line from '../../../public/assets/images/Line.svg'
 import Settings from '../../../public/assets/images/Settings.svg'
 import TreeDots from '../../../public/assets/images/TreeDots.svg'
 import Camera from '../../../public/assets/images/Camera.svg'
+import useWindowSize from '../../../hooks/useWindowSize';
 
 
 ChartJS.register(
@@ -60,11 +61,12 @@ export const data = {
 };
 
 export default function PriceChart() {
+  const { width } = useWindowSize()
   return (
     <div 
     style={{ fontFamily: 'Poppins'}}
-    className='rounded-[10px] md:w-[60%] flex flex-col gap-4 p-4 bg-black/90 '>
-    <div className='flex flex-col md:flex-row gap-6 items-center'>
+    className='rounded-[10px] w-[500px] md:w-[60%] flex flex-col gap-4 p-4 bg-black/90 '>
+    <div className='flex flex-col  md:w-full md:flex-row gap-6 items-center'>
       <h4 className='text-textColorActive text-lg font-medium' >PancakeSwap</h4>
       <div className='p-2 px-4 border rounded-[10px] border-textColor text-textColor flex-1 flex items-center justify-between md:max-w-[500px]'>
       <div className='flex items-center gap-4'>

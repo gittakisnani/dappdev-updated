@@ -6,12 +6,14 @@ const ContentWrapper = styled.main`
     background-color: #242424;
     overflow-y: hidden;
     border-radius: 20px;
-    padding: 1.2rem 1rem;
+    padding: .5rem;
     display: flex;
     gap: 1rem;
     margin: 0 auto;
     overflow: auto;
+    max-width: 100%;
     @media (min-width: 768px) {
+        padding: 1.2rem 1rem;
         width: 100%;
         height: 505px;
         max-height: 580px;
@@ -31,7 +33,9 @@ const ChildrenWrapper = styled.div`
     padding: 0.8rem 1.6rem;
 
     @media screen and (max-width: 768px) {
-        margin-bottom: 4rem
+        margin-bottom: 4rem;
+        padding: 1rem;
+
     }
 `
 

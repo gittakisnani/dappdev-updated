@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import NavLink from "./NavLink";
-
+import Close from '../../../public/assets/images/Close.svg'
+import Image from "next/image";
 const navLinksData = [
     {
         text: 'Home',
@@ -26,9 +27,16 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding-left: 4.5rem;
+    position: static;
 
     @media (max-width: 768px) {
-        display: none;
+        background-color: black;
+        inset: 0;
+        z-index: 1000;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 0;
+        position: fixed;
     }
 `
 
@@ -38,6 +46,10 @@ const Wrapper = styled.div`
     align-items: center;
     gap: 1.2rem;
 
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
 `
 
 const NavButton = styled.div`
@@ -51,9 +63,12 @@ const NavButton = styled.div`
     padding: .5rem 1rem;
 `
 
-const NavBar = () => {
+const NavBar = ({ handleNavBar, includeIcon}) => {
   return (
-    <Nav>
+    <Nav>   
+        {includeIcon && <button onClick={handleNavBar} className="absolute top-6 right-6 cursor-pointer">
+            <Image src={Close} alt='Close menu' width={30} />
+        </button>}
         <Wrapper>
             {navLinksData.map(({ text, link }) => (
                 <NavLink key={text} text={text} link={link} />

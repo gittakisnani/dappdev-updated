@@ -24,7 +24,7 @@ const Entity = () => {
             </div>
             <span 
             style={{background: 'linear-gradient(180deg, #B60000 0%, #FF1616 100%)'}}
-            className='w-[50px] h-[27px] text-center font-bold rounded-[3px]'>Yes</span>
+            className='md:w-[50px] md:h-[27px] text-center font-semibold p-2 md:p-0 md:font-bold rounded-[1px]'>Yes</span>
         </div>
     )
 }
@@ -32,7 +32,7 @@ const Entity = () => {
 const RiskMedium = () => {
   return (
     <div className="flex flex-col gap-4 md:w-[420px]">
-        <div className='grid grid-cols-2 gap-4'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             <Risk good />
             <Risk />
         </div>
@@ -46,9 +46,9 @@ const RiskMedium = () => {
                 </div>
                 <span 
                 style={{background: 'linear-gradient(180deg, #B60000 0%, #FF1616 100%)'}}
-                className='w-[90px] h-[43px] text-[25px] font-bold text-center rounded-[10px]'>Yes</span>
+                className='md:w-[90px] md:h-[43px] p-2 md:p-0 text-xl md:text-[25px] font-bold text-center rounded-[10px]'>Yes</span>
             </div>
-            <div className='p-7 text-textColorActive flex flex-col gap-4'>
+            <div className='p-4 md:p-7 text-textColorActive flex flex-col gap-4'>
                 <Entity />
                 <Entity />
                 <Entity />

@@ -27,7 +27,7 @@ const TweetList = ({ tweet, followers = false}) => {
     return (
         <div className="bg-black/90 rounded-[10px] max-w-full text-textColorActive p-4 hover:bg-black/40">
             <h5 className="font-light mb-3">Recent Tweets By <span className='font-bold'>{tweet}</span></h5>
-            <div className='flex gap-2 max-w-full overflow-x-auto'>
+            <div className='flex gap-2 md:max-w-full overflow-x-auto'>
             <Tweet followers={followers} />
             <Tweet followers={followers} />
             <Tweet followers={followers} />
@@ -42,7 +42,7 @@ const RightSocialMedia = () => {
   return (
     <div 
     style={{ fontFamily: 'Poppins'}}
-    className="rounded-[10px] bg-[#A4A4A4] flex-1 p-4 max-w-[622px] flex flex-col gap-4 overflow-y-auto">
+    className="rounded-[10px] bg-[#A4A4A4] flex-1 p-4  md:max-w-[622px] flex flex-col gap-4 overflow-y-auto">
         <TweetList tweet='@PancakeSwap' />
         <TweetList followers tweet='Influencers' />
         <TweetList tweet='The Community' />

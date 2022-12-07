@@ -66,6 +66,7 @@ const SideBar = styled.aside`
     right: 0;
     bottom: 0;
     overflow-y: auto;
+    z-index: 10000;
     
     &::-webkit-scrollbar {
         display: none;

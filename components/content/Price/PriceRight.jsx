@@ -112,7 +112,7 @@ const AllTimePriceHistory = () => {
         <div className="p-4 rounded-[10px] border border-textColor">
             <div className="flex flex-col md:justify-between gap-2 md:flex-row md:items-center">
                 <h4 className="text-lg font-semibold text-textColorActive">All Time Price History</h4>
-                <div className="w-[248px] h-0.5 bg-textColor"></div>
+                <div className="w-full md:w-[248px] h-0.5 bg-textColor"></div>
             </div>
             <div className="grid grid-cols-2 text-textColor mt-1">
                 <div className="flex flex-col">
@@ -160,7 +160,7 @@ const Entity = ({ handleIsOpen }) => {
 
 const EntitiesWrapper = ({children}) => {
     return (
-        <div className="grid gap-4 grid-cols-2 p-4 border border-textColor rounded-[10px] flex-1 overflow-y-auto">
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 p-4 border border-textColor rounded-[10px] flex-1 overflow-y-auto">
             {children}
         </div>
     )
@@ -174,7 +174,7 @@ const PriceRight = () => {
   return (
     <div 
     style={{ fontFamily: 'Poppins'}}
-    className='w-[518px] flex flex-col gap-4 justify-between'>
+    className='md:w-[518px] flex flex-col gap-4 justify-between'>
     <AllTimePriceHistory />
     <TradingVolume />
     {!isOpen 
