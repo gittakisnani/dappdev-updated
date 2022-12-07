@@ -8,6 +8,10 @@ const WebsiteWrapper = styled.div`
     align-items: flex-end;
 
 
+    @media (max-width: 768px) {
+        align-items: center;
+    }
+
     > h4 {
         font-weight: 500;
         font-size: 15px;  

@@ -13,7 +13,12 @@ const LinksWrapper = styled.div`
     align-content: center;
 
     @media (max-width: 768px) {
-        display: none;
+        width: unset;
+        border: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0;
     }
 `
 

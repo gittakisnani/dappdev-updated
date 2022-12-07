@@ -27,7 +27,7 @@ export const data = {
 
 const options = {
     responsive: true,
-    cutout: 65,
+    cutout:55,
     plugins: {
         legend: {
             display: false
@@ -37,5 +37,5 @@ const options = {
 
 export default function Chart() {
   const { width } = useWindowSize()
-  return <Doughnut options={{...options, ...(width < 768 && { cutout: 80})}} data={data} />;
+  return <Doughnut options={{...options, ...(width < 540 && { cutout: 80})}} data={data} />;
 }

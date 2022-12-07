@@ -20,9 +20,13 @@ const InfosWrapper = styled.div`
 
 const Username = styled.h2`
     font-weight: 700;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 119.5%;
     color: ${({ theme }) => theme.textColorActive};
+
+    @media (min-width: 768px) {
+        font-size: 30px;
+    }
 `
 
 const LinkWrapper = styled.div`

@@ -4,11 +4,16 @@ const StatsWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, fit-content(200px));
     gap: 2rem;
+
+    @media (max-width: 768px) {
+    grid-template-columns: repeat(1, fit-content(200px));
+    }
 `
 
 const State = styled.div`
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: .2rem;
     padding: 0 2rem;
 
@@ -58,11 +63,11 @@ const Stats = () => {
             <p>Current Price (CAKE)</p>
             <h4>$4.38</h4>
         </State>
-        <State className="!hidden md:!flex">
+        <State>
             <p>24 Hour Change</p>
             <h4>$4.38</h4>
         </State>
-        <State className="!hidden md:!flex">
+        <State>
             <p>Market Cap</p>
             <h5>$638,463,664</h5>
         </State>

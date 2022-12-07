@@ -13,6 +13,10 @@ const SocialWrapper = styled.div`
     gap: .5rem;
     align-items: flex-end;
 
+    @media (max-width: 768px) {
+        align-items: center;
+    }
+
     > h4 {
         font-weight: 500;
         font-size: 15px;  
