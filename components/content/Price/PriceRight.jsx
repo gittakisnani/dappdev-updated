@@ -109,7 +109,7 @@ const Table = () => {
 
 const AllTimePriceHistory = () => {
     return (
-        <div className="p-4 rounded-[10px] border border-textColor">
+        <div className="p-2 md:p-4 rounded-[10px] border border-textColor">
             <div className="flex flex-col md:justify-between gap-2 md:flex-row md:items-center">
                 <h4 className="text-lg font-semibold text-textColorActive">All Time Price History</h4>
                 <div className="w-full md:w-[248px] h-0.5 bg-textColor"></div>
@@ -130,7 +130,7 @@ const AllTimePriceHistory = () => {
 
 const TradingVolume = () => {
     return (
-        <div className="p-4 rounded-[10px] border border-textColor text-textColorActive">
+        <div className="p-2 md:p-4 rounded-[10px] border border-textColor text-textColorActive">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center">
                 <h4 className="text-lg font-semibold">Trading Volume <span className="font-light">[24h]</span></h4>
@@ -146,7 +146,7 @@ const TradingVolume = () => {
 
 const Entity = ({ handleIsOpen }) => {
     return (
-        <div className="bg-black/90 p-4 rounded-[10px]  flex flex-col gap-2 text-textColorActive">
+        <div className="bg-black/90 p-2 md:p-4 rounded-[10px]  flex flex-col gap-2 text-textColorActive">
             <h6 className="text-sm font-semibold">Recent Whale Transactions</h6>
             <p className="text-xs text-textColor">Transactions made by “Whale” Accounts.</p>
             <div className="flex items-center gap-2 justify-between">
@@ -160,7 +160,7 @@ const Entity = ({ handleIsOpen }) => {
 
 const EntitiesWrapper = ({children}) => {
     return (
-        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 p-4 border border-textColor rounded-[10px] flex-1 overflow-y-auto">
+        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 p-2 md:p-4 border border-textColor rounded-[10px] flex-1 overflow-y-auto">
             {children}
         </div>
     )
@@ -184,7 +184,7 @@ const PriceRight = () => {
         <Entity handleIsOpen={handleIsOpen} />
         <Entity handleIsOpen={handleIsOpen} />
     </EntitiesWrapper>
-    : <div className="p-4 rounded-[10px] bg-black/90 border border-textColor overflow-y-auto tableWrapper">
+    : <div className="p-2 md:p-4 rounded-[10px] bg-black/90 border border-textColor overflow-y-auto tableWrapper">
     <div className="mb-2 flex gap-5 items-center">
         <Image onClick={handleIsOpen} src={Back} alt='Back' />
         <h6 className="text-textColorActive font-semibold text-sm">Recent Whale Transactions</h6>

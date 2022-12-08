@@ -102,7 +102,7 @@ const SideBarWrapper = () => {
             <>
                 <SideBarLinkWrapper 
                 active={router.asPath.includes(link)}  
-                key={link} 
+                key={index} 
                 link={link} 
                 text={text} 
                 icon={icon} 

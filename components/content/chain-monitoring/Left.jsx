@@ -8,7 +8,7 @@ import Image from "next/image"
 const TokenAddress = () => {
     return (
         <div 
-        className="p-4 rounded-[10px] border border-textColor text-textColorActive flex flex-col gap-1">
+        className="p-2 md:p-4 rounded-[10px] border border-textColor text-textColorActive flex flex-col gap-1">
             <Title text={'Token Address'} />
             <LinksWrapper text='0x0e09fa....e81ce82' images={[{ src: Copy, alt: 'Copy'}]} />
             <p className="font-light text-xs md:text-sm">Verification Details - </p>
@@ -23,7 +23,7 @@ const TokenAddress = () => {
 
 const GasFree = () => {
   return (
-    <div className="border border-textColor rounded-[10px] p-4 text-textColorActive">
+    <div className="border border-textColor rounded-[10px] p-2 md:p-4 text-textColorActive">
       <Title text='Gas Free' />
       <div className="flex flex-col">
         <p className="text-sm text-textColor font-medium">Current</p>
@@ -40,7 +40,7 @@ const GasFree = () => {
 
 const CustomAlert = () => {
   return (
-    <div className="p-4 rounded-[10px] border border-textColor flex flex-col gap-2">
+    <div className="p-2 md:p-4 rounded-[10px] border border-textColor flex flex-col gap-2">
       <Title text='Get Custom Alert.' />
       <p className="font-light text-xs text-textColor -mt-2">
       Get alerts for significant events for this project Date and time for LP Unlocks, Security Alerts etc.

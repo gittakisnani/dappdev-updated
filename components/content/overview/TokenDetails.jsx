@@ -43,7 +43,7 @@ const TokenDetails = () => {
     const { width } = useWindowSize()
   return (
     <>
-    <div className='p-4 rounded-[10px] border border-textColorActive text-textColorActive bg-[#111111] flex-1'>
+    <div className='p-2 md:p-4 rounded-[10px] md:border border-textColorActive text-textColorActive bg-[#111111] flex-1'>
         <div className='flex gap-2 items-center mb-4'>
         <h4 className='font-bold text-xl text-textColorActive'>Token Details</h4>
         <Image src={Info} alt='More' width={20} />

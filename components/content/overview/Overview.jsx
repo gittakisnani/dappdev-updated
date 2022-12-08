@@ -22,7 +22,7 @@ const Overview = () => {
   const { width } = useWindowSize()
   return (
     <OverviewWrapper>
-        <div className="flex flex-row md:flex-col w-full justify-between md:justify-[unset]">
+        <div className="flex flex-row md:flex-col w-full md:justify-between md:justify-[unset]">
           <ImagesWrapper />
           <ScoreWrapper />
         </div>

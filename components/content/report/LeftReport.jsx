@@ -18,7 +18,7 @@ const DetailsData = [
 const LeftReport = () => {
   return (
     <div className="flex flex-col gap-4 justify-between md:w-[478px]">
-        <div className="p-4 rounded-[10px] border border-textColorActive text-textColorActive bg-[#111111] flex-1">
+        <div className="p-2 md:p-4 rounded-[10px] md:border border-textColorActive text-textColorActive bg-[#111111] flex-1">
             <Title  text={'Audit Overview'} />
             <div className="mt-4 flex flex-col gap-5">
             {DetailsData.map(detail => (<DetailEntity key={Math.random()} detail={detail} />))}

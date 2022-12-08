@@ -14,6 +14,10 @@ const Wrapper = styled.div`
   min-height: 100vh;
   padding: .8rem 1.4rem;
   width: 100vw;
+
+  @media screen and (max-width: 768px){
+    padding: 10px;
+  }
 `
 
 function MyApp({ Component, pageProps }) {
@@ -21,7 +25,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <ThemeProvider theme={globalTheme}>
         <GlobalStyles />
-        <Wrapper className=''>
+        <Wrapper>
           <Header />
           <TopBar />
           <Content>

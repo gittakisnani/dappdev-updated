@@ -5,7 +5,7 @@ import { useState } from "react"
 
 
 const Alert = styled.div`
-    padding: .8rem 1.5rem;
+    padding: 10px;
     border-radius: 10px;
     border: 1px solid ${({ theme }) => theme.textColorActive };
     display: flex;
@@ -40,6 +40,10 @@ const Alert = styled.div`
     input {
         background: #404040;
         color: ${({ theme }) => theme.textColor};
+    }
+
+    @media (min-width: 768px) {
+        padding: .8rem 1.5rem;
     }
 `
 

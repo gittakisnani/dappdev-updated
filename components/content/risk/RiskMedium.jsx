@@ -36,7 +36,7 @@ const RiskMedium = () => {
             <Risk good />
             <Risk />
         </div>
-        <div className="p-4 rounded-[10px] border border-primaryRed flex-1 bg-[#414141]">
+        <div className="p-2 md:p-4 rounded-[10px] md:border border-primaryRed flex-1 bg-[#414141]">
             <div className="flex justify-between gap-4 items-center text-textColorActive">
                 <div className="flex flex-col flex-1">
                     <Title fontSize={'18px'} text='Anti Whale Function Present' />
@@ -48,7 +48,7 @@ const RiskMedium = () => {
                 style={{background: 'linear-gradient(180deg, #B60000 0%, #FF1616 100%)'}}
                 className='md:w-[90px] md:h-[43px] p-2 md:p-0 text-xl md:text-[25px] font-bold text-center rounded-[10px]'>Yes</span>
             </div>
-            <div className='p-4 md:p-7 text-textColorActive flex flex-col gap-4'>
+            <div className='p-2 md:p-4 md:p-7 text-textColorActive flex flex-col gap-4'>
                 <Entity />
                 <Entity />
                 <Entity />

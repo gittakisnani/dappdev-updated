@@ -9,7 +9,7 @@ const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
 
-    @media (min-width: 768) {
+    @media (min-width: 768px) {
       gap: 1.5rem;
       flex-direction: row;
     }

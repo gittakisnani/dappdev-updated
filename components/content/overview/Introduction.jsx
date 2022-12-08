@@ -14,7 +14,7 @@ const HighlightsData = [
 const Introduction = () => {
   return (
     <div className="flex flex-col gap-6 h-full max-w-[520px]">
-        <div className="bg-[#2D2D2D] p-6 rounded-[10px] border border-gray-100 text-textColorActive">
+        <div className="bg-[#2D2D2D] p-2 md:p-6 rounded-[10px] md:border border-gray-100 text-textColorActive">
             <h4 className="text-[22px] leading-[119%] font-bold capitalize mb-2">Introduction to the project</h4>
             <p className="text-[15px] font-light"><span className="font-bold">PancakeSwap</span> is a decentralized exchange for swapping BEP20 tokens on Binance Smart Chain. PancakeSwap uses an automated market maker (AMM) model where users trade against <span className="underline font-bold">(Read More)</span></p>
 
@@ -33,7 +33,7 @@ const Introduction = () => {
             ))}
             </div>
         </div>
-        <div className="bg-[#2D2D2D] flex-1 h-full p-6 rounded-[10px] border border-gray-100 text-textColorActive">
+        <div className="bg-[#2D2D2D] flex-1 h-full p-2 md:p-6 rounded-[10px] md:border border-gray-100 text-textColorActive">
             <h4 className="text-[22px] leading-[119%] font-bold capitalize mb-2">Additional Info</h4>
             <div className="flex flex-col gap-2 leading-[150%]">
                 <div className="flex justify-between items-center text-textColor ">

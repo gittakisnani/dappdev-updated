@@ -5,10 +5,10 @@ import styled from "styled-components"
 const Categories = styled.div`
     display: flex;
     flex-direction: column;
-    gap: .8rem;
-    padding: 1rem 1.5rem;
-    border: 1px solid ${({ theme }) => theme.textColorActive };
     border-radius: 10px;
+    border: 1px solid ${({ theme }) => theme.textColorActive };
+    padding: 1rem 1.5rem;
+    gap: .8rem;
     color: ${({ theme }) => theme.textColorActive};
 
     h5 {
@@ -25,6 +25,10 @@ const Categories = styled.div`
         padding: .2rem .4rem;
         border: 1px solid ${({ theme }) => theme.textColorActive };
     }
+
+    @media (max-width: 768px) {
+        padding: 10px;
+    }
 `
 
 const TitleWrapper = styled.div`
@@ -38,7 +42,11 @@ const CategoriesList = styled.div`
     gap: 1rem;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1rem;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 1rem;
+    }
 `
 
 const CategoriesWrapper = () => {

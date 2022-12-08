@@ -6,7 +6,6 @@ const ContentWrapper = styled.main`
     background-color: #242424;
     overflow-y: hidden;
     border-radius: 20px;
-    padding: .5rem;
     display: flex;
     gap: 1rem;
     margin: 0 auto;
@@ -33,9 +32,9 @@ const ChildrenWrapper = styled.div`
     padding: 0.8rem 1.6rem;
 
     @media screen and (max-width: 768px) {
-        margin-bottom: 4rem;
-        padding: 1rem;
-
+        margin-bottom: 4.5rem;
+        padding: 10px;
+        gap: 8px;
     }
 `
 

@@ -19,7 +19,7 @@ import Link from "next/link"
 
 const Top = () => {
     return (
-        <div className="p-4 rounded-[10px] border border-textColor">
+        <div className="p-2 md:p-4 rounded-[10px] border border-textColor">
             <Title includeIcon={false} text='Social Links' />
             <div className="flex items-center gap-4 mt-3">
             <Link href={SocialMediaData.discord}>
@@ -45,7 +45,7 @@ const Top = () => {
 const Bottom = () => {
     return (
         <div className="border-special rounded-[10px] p-[3px] flex-1 text-textColorActive">
-            <div className="flex bg-[#242424] rounded-[10px] p-4 flex-col gap-2 h-full w-full">
+            <div className="flex bg-[#242424] rounded-[10px] p-2 md:p-4 flex-col gap-2 h-full w-full">
                 <Title text='Related Terms List' />
                 <p className="text-xs font-extralight">List of words most used on Twitter by the community regarding the project in the past <span className="font-bold">24 hours</span> according to their <span className="font-bold">volume.</span></p>
                 <div className="flex flex-1 justify-between flex-col">
@@ -84,7 +84,7 @@ const TwitterOverviewEntity = ({ category, total, value, icon}) => {
 
 const Right = () => {
     return (
-        <div className="border-special rounded-[10px] p-4 flex-1 text-textColorActive h-full md:w-[327px] flex flex-col">
+        <div className="border-special rounded-[10px] p-2 md:p-4 flex-1 text-textColorActive h-full md:w-[327px] flex flex-col">
             <div className="flex items-center justify-between">
                 <Title includeIcon={false} text='Twitter Overview' />
                 <Image src={Twitter} alt='Twitter overview' />

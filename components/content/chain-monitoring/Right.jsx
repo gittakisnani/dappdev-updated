@@ -85,9 +85,9 @@ const WalletAgeDistributionEntity = ({ icon, primaryText, secondaryText }) => {
 
 const WalletAgeDistributionStat = ({ text, value}) => {
     return (
-        <div className="flex items-center gap-6 text-xs text-textColor">
-            <p className="text-right w-[100px]">{text}</p>
-            <div className="flex-1 flex gap-3 items-center">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 text-xs text-textColor w-full">
+            <p className="md:text-right w-[100px]">{text}</p>
+            <div className="flex-1 flex gap-3 items-center w-full">
             <div 
             style={{ width: `${value}%`}}
             className="h-1 rounded-xl bg-textColorActive"></div>
@@ -99,17 +99,17 @@ const WalletAgeDistributionStat = ({ text, value}) => {
 
 const WalletAgeDistribution = () => {
     return (
-        <div className="bg-black/70 p-4 rounded-[10px] flex flex-col md:flex-row items-start md:items-center justify-between gap-8 text-textColorActive overflow-x-auto">
-            <div className="flex flex-col min-w-[400px] my-2 md:my-0">
+        <div className="bg-black/70 p-2 md:p-4 rounded-[10px] flex flex-col max-w-full md:flex-row items-start md:items-center justify-between gap-4 md:gap-8 text-textColorActive overflow-x-auto">
+            <div className="flex flex-col w-full md:min-w-[400px] my-2 md:my-0">
                 <Title text='Wallet Age Distribution' />
-                <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                     <WalletAgeDistributionEntity icon={WalletAge1} secondaryText='Average Wallet Age' primaryText='1 yr 1 mos' />
                     <WalletAgeDistributionEntity icon={WalletAge1} secondaryText='Average Wallet Age' primaryText='1 yr 1 mos' />
                     <WalletAgeDistributionEntity icon={WalletAge1} secondaryText='Average Wallet Age' primaryText='1 yr 1 mos' />
                     <WalletAgeDistributionEntity icon={WalletAge1} secondaryText='Average Wallet Age' primaryText='1 yr 1 mos' />
                 </div>
             </div>
-            <div className="flex flex-1 flex-col gap-4 min-w-[400px] my-2 md:my-0">
+            <div className="flex flex-1 flex-col gap-2 w-full md:min-w-[400px] my-2 md:my-0">
                 <WalletAgeDistributionStat text='Above 1 yr' value={67} />
                 <WalletAgeDistributionStat text='6 mo - 1 yr' value={24} />
                 <WalletAgeDistributionStat text='3 mo - 6 mo' value={5} />
@@ -125,7 +125,7 @@ const WalletAgeDistribution = () => {
 
 const TopTokenHeaders = () => {
     return (
-        <div className="bg-black/90 text-textColorActive p-4 rounded-[10px] w-full max-h-[60%] overflow-auto">
+        <div className="bg-black/90 text-textColorActive p-4 rounded-[10px] w-full md:max-h-[60%] overflow-auto">
             <Title text='Top Token Headers' />
             <table className="w-full mt-3">
                 <thead className="text-textColor font-extralight text-sm">
@@ -177,7 +177,7 @@ const Right = () => {
     style={{
         fontFamily: 'Poppins'
     }}
-    className='flex flex-1 flex-col gap-4 p-4 bg-textColor rounded-[10px]'>
+    className='flex flex-1 flex-col gap-2 md:gap-4 p-2 md:p-4 bg-textColor rounded-[10px]'>
     <TopTokenHeaders />
     <WalletAgeDistribution />
     </div>
